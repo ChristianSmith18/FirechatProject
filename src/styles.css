@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+.main-container {
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.puntero {
+  cursor: pointer;
+}
+
+
+.chat-window {
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border: 2px solid rgb(21, 77, 187);
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,28abd3+31,21abb2+67,258dc8+100 */
+  background-color: #258dc8;
+  /* Old browsers */
+  background-color: -moz-linear-gradient(top, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* FF3.6-15 */
+  background-color: -webkit-linear-gradient(top, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-color: linear-gradient(to bottom, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#258dc8', endColorstr='#258dc8', GradientType=0);
+  /* IE6-9 */
+}
+
+.app-mensajes {
+  overflow-y: scroll;
+  height: 270px;
+  /*background:gray;*/
+  padding: 5px;
+}
+
+
+/* Animaciones */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* ScrollBar */
+/* #app-mensajes::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#app-mensajes::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#app-mensajes::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+} */
+
+#app-mensajes::-webkit-scrollbar {
+  width: 12px;
+}
+
+#app-mensajes::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+#app-mensajes::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+input.input {
+  padding-top: 5px;
+}

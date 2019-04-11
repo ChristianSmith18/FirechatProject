@@ -1,0 +1,19 @@
+.mensaje-bubble {
+  background-color: #7cdaff;
+  border-radius: 1rem;
+  padding: 5px 8px;
+}
+
+.app-mensajes {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,28abd3+31,21abb2+67,258dc8+100 */
+  background-color: #258dc8;
+  /* Old browsers */
+  background-color: -moz-linear-gradient(top, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* FF3.6-15 */
+  background-color: -webkit-linear-gradient(top, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-color: linear-gradient(to bottom, #258dc8 0%, #28abd3 31%, #21abb2 67%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#258dc8', endColorstr='#258dc8', GradientType=0);
+  /* IE6-9 */
+}

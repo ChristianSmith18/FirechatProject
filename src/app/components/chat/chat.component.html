@@ -1,0 +1,16 @@
+<div class="align-content-between">
+  <h3>Chat</h3>
+</div>
+
+<hr>
+
+<div id="app-mensajes" class="app-mensajes">
+  <div *ngFor="let mensaje of _cs.chats" [ngClass]="{ 'text-right': _cs.usuario.uid == mensaje.uid }">
+    <span class="badge" [ngClass]="{ 'badge-primary': _cs.usuario.uid == mensaje.uid,
+                                      'badge-success': _cs.usuario.uid != mensaje.uid }">{{ mensaje.nombre }}</span>
+    <p class="mensaje-bubble">{{ mensaje.mensaje }}</p>
+  </div>
+</div>
+
+<input class="form-control input" type="text" name="mensaje" [(ngModel)]="mensaje" (keyup.enter)="send()"
+  placeholder="Enviar mensaje" autocomplete="off">
